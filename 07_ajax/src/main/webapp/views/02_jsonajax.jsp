@@ -41,7 +41,7 @@
 						console.log(data);
 					});
 		});
-	
+
 	
 		$("#jsonBtn").click(e=>{
 			$.get("<%=request.getContextPath()%>/basicJson.do",
