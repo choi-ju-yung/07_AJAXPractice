@@ -47,6 +47,7 @@ public class JsonSimpleServlet extends HttpServlet {
 		
 		
 		// 다수데이터를 json으로 전송하기
+		// JSONArray 안에 JSONObject 를 하나씩 넣어준것!
 		JSONArray joa=new JSONArray();
 		//JSONArray에는 리스트방식으로 JSONObject를 저장  add를 이용해서 저장
  		for(Member m1 : list) {
