@@ -54,10 +54,7 @@ public class JavascriptAjaxBasicServlet extends HttpServlet {
 		
 		new Thread(()->{  // 트래픽을 강제적으로 부여 (딜레이 발생시키기)
 			
-			
-			
-			
-			
+		
 			try {
 				Thread.sleep(4000);
 			}catch(InterruptedException e) {

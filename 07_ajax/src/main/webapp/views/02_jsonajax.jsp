@@ -36,10 +36,28 @@
 	
 	
 		$("#gsonBtn").click(e=>{
-			$.get("<%=request.getContextPath()%>/gsontest.do",
+<%-- 			$.get("<%=request.getContextPath()%>/gsontest.do",
 					data=>{
 						console.log(data);
-					});
+					}); --%>
+			
+			$.post("<%=request.getContextPath()%>/gsontest.do",
+					{data:JSON.stringify({ 
+						// stringify() : 자바스크립트 객체를 -> JSON 문자열
+						// parse() : JSON 문자열 -> 자바스크립트 객체로
+						// 해당 서블릿으로 밑 자바스크립객체를 보냄
+						userId:"bsyoo",
+						password:"1234",
+						userName:"유병승",
+						gender:'M',
+						age:19,
+						email:"afe@adf.com",
+						phone:"123",
+						address:"경기도시흥시",
+						enrollDate:'20230614'
+					})},
+					data=>{
+				});
 		});
 	
 	
